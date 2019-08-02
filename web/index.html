@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+            *{
+                margin:0;
+                padding:0;
+            }
+            
+            body{
+                background-color:black;
+            }
+            
+            #labels{
+                color:white;
+                font-family:Montserrat;
+                font-size:20px;
+            }
+
+            </style>
+    </head>
+    <body>       
+        <div id="1_div" style="width:500px; padding:5px; height:600px; border:2px solid white; position: absolute; margin:auto; left:0; top:0; right:0;">
+            
+            <div id="2_div" style=" width:400px; height:500px; position:absolute; margin:auto; right:0; left:0; top:0; bottom:0;">
+                
+
+                <label id="labels" style="font-size:40px; float:left;">Log In</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label id="labels">Username</label>
+                <br>
+                <br>
+                <input type="text" name="session_user" id="session_user" style=" padding:15px; width:350px; height:20px; border:none; border-radius:40px;"/>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label id="labels">Password</label>
+                <br>
+                <br>
+                <input type="password" name="session_pass" id="session_pass" style="width:350px; padding:15px; height:20px; border:none; border-radius:40px;"/>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="submit" id="submit" value="Enter" name="submit" onsubmit="gg(session_user.value,session_pass.value)" style="width:400px; height:60px;  border:none; cursor:pointer; background:white; border:1px solid whitesmoke; font-family:Montserrat;"/>
+
+            </div>
+            
+        </div>
+        
+                <script src="jquery.js"></script>
+        
+        <script>
+          
+                
+                 $("#1_div").animate({
+                
+                 bottom:"0"
+                
+            },1500);
+            
+            
+            function gg(user, pass)
+            {
+                
+                alert(user + " - " + pass);  
+                /*var xml = new XMLHttpRequest();
+                
+                  xml.open('GET',"parameters.jsp?user="+user+"&pass="+pass, true);
+                  xml.send();
+*/
+            }
+
+       
+            </script>
+    </body>
+</html>
